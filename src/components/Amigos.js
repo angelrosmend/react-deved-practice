@@ -1,8 +1,10 @@
 import React,{useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import './amigos.css'
+import Boton from './Boton';
 
 
-function Friends() {
+function Amigos() {
 
  useEffect(() => {
   fetchFriends();
@@ -20,16 +22,20 @@ function Friends() {
  }
 
  return (
-  <div>
+  <div className="container">
    {friends.map(friend =>(
-    <h1 key={friend.id}>
-     <Link to={`/friends/${friend.id}`}>
-     {friend.nombre}
+     <li key={friend.id} className="amigo">
+     <img className="avatar" src={friend.avatar} alt="" />
+     <Link className="link" to={`/home/amigo/${friend.id}`}>
+     <h3>{friend.nombre}</h3>
      </Link>
-     </h1>
+     <h4>{friend.ciudad}</h4>
+     <Boton/>
+
+     </li>
    ))}
   </div>
  )
 }
 
-export default Friends
+export default Amigos

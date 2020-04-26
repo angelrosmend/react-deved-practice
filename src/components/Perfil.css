@@ -1,0 +1,16 @@
+
+.perfil{
+ width: 60%;
+ margin: 50px auto;
+ height: 50vh;
+ border: 4px solid rgb(77, 72, 72);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.perfil img{
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+}

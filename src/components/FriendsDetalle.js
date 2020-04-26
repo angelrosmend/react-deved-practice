@@ -25,11 +25,10 @@ function Friend({match}) {
 
 
  return (
-  <div>
+   <div className="perfil">
    <img src={friend.avatar} alt="" />
-   <h1>{friend.nombre}</h1>
-   <h2>{friend.ciudad}</h2>
-   <h3>{friend.curso}</h3>
+    <h2>{friend.nombre}</h2>
+    <h3>{friend.ciudad}</h3>
   </div>
  )
 }
