@@ -12,16 +12,16 @@ function Friend({match}) {
 
  const [friend, setFriend] = useState({})
 
- const fetchFriend = async () => {
-    const fetchFriend = await fetch(
-   `https://my-json-server.typicode.com/angelrosmend/utn-friendlist/contacts/${
-    match.params.id
-   }`
-  );
-  const friend = await fetchFriend.json();
-  setFriend(friend);
-  console.log(friend);
- }
+const fetchFriend = async () => {
+const fetchFriend = await fetch(
+`https://my-json-server.typicode.com/angelrosmend/utn-friendlist/contacts/${
+match.params.id
+}`
+);
+const friend = await fetchFriend.json();
+setFriend(friend);
+console.log(friend);
+}
 
 
  return (
