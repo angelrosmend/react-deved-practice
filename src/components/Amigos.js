@@ -6,10 +6,6 @@ import Boton from './Boton';
 
 function Amigos() {
 
- useEffect(() => {
-  fetchFriends();
- },[]);
-
  const [friends, setFriends] = useState([]);
 
  const fetchFriends = async () => {
@@ -20,6 +16,12 @@ function Amigos() {
   console.log(friends);
   setFriends(friends);
  }
+ 
+ 
+ useEffect(() => {
+  fetchFriends();
+ },[]);
+
 
  return (
   <div className="container">
