@@ -1,8 +1,6 @@
 import React from 'react'
 import {Component, Fragment} from 'react'
 
-
-
 class Boton extends Component {
  constructor(props) {
      super(props)
